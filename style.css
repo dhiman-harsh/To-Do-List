@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vmin;
+    height: 100vh;
+    border: 1px solid #999;
+    position: relative;
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: purple;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 28px;
+    position: sticky;
+    top: 0;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    padding-bottom: 86px;
+    text-wrap: wrap;
+}
+
+/* scrollbar */
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+
+.input {
+    position: absolute;
+    bottom: 16px;
+    left: 5%;
+    background-color: #656565;
+    width: 90%;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    /* justify-content: space-between;
+    align-items: center; */
+    border-radius: 40px;
+}
+
+.task-content {
+    padding: 8px 28px;
+    width: 75%;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    flex: 1;
+}
+
+.add {
+    font-size: 20px;
+    font-weight: 550;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    white-space: nowrap;
+}
+
+.content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.content ul li {
+    list-style: none;
+    padding: 8px;
+    font-size: 24px;
+    border-bottom: 2px solid #424242;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.remove-task {
+    position: absolute;
+    right: 4px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+.remove-task i {
+    color: #868686;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+
+    border: 2px solid red;
+}
+
+.thats-all {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    color: rgb(210, 210, 210);
+}
+
+.li-content {
+    text-wrap: wrap;
+}
